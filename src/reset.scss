@@ -1,0 +1,102 @@
+$blue: hsl(231, 97%, 41%);
+$white:hsl(89, 0%, 100%);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .maindetail{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color:$blue;
+    padding-top: 20px;
+  }
+  
+  .marginset{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .leftdetail{
+    max-width: 32rem;
+    height: 18rem;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    
+    .leftslidedetail{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  
+  .heading{
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .indexdetail{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+    top: 20px;
+  }
+  
+  .hiddendetail{
+    display: none;
+  }
+  
+  .elementdetail{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    left: 45%;
+    bottom: -5px;
+  }
+  
+  .currentslide{
+    height: 5px;
+    width: 0.5rem;
+    color: $blue;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    font-size: 5rem;
+  }
+  
+  .previousslide{
+    height: 0.5rem;
+    width: 15px;
+    color: $white;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    font-size: 5rem;
+  }
+  
+  .rightslidedetail{
+    position: absolute;
+    right: 0;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    color:$white;
+    cursor: pointer;
+  }
